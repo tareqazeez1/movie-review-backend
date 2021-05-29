@@ -4,6 +4,15 @@
   "description": "",
   "main": "index.js",
   "type": "module",
+
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
+    }
   "scripts": {
     "start": "nodemon index.js"
   },
@@ -16,6 +25,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.10",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "serve": "^11.3.2"
   }
 }
